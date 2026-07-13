@@ -1,7 +1,7 @@
----
+﻿---
 title: "Worklog Tuần 2"
-date: 2024-01-01
-weight: 1
+date: 2026-04-25
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
@@ -12,48 +12,22 @@ pre: " <b> 1.2. </b> "
 
 ### Mục tiêu tuần 2:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thực hành triển khai EC2 ở cả public subnet và private subnet để hiểu mô hình phân tách truy cập trong AWS.
+* Tìm hiểu cách kết nối EC2, đồng thời nắm vai trò của DNS và Route 53 trong việc định tuyến tên miền.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 1 | - Tạo EC2 public và EC2 private, kiểm tra sự khác nhau về khả năng truy cập giữa hai loại instance. | 25/04/2026 - 03/05/2026 | 25/04/2026 - 03/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Thực hành kết nối vào EC2, rà soát các yếu tố liên quan như key pair, security group, public IP và cấu hình mạng. | 25/04/2026 - 03/05/2026 | 25/04/2026 - 03/05/2026 |  |
+| 3 | - Tìm hiểu Route 53 và DNS, ghi chú cách domain name được phân giải và điều hướng đến tài nguyên phù hợp. | 25/04/2026 - 03/05/2026 | 25/04/2026 - 03/05/2026 |  |
+| 4 | - Thực hành tạo cấu hình Route 53 ở mức cơ bản để hiểu cách quản lý bản ghi và liên kết tên miền với tài nguyên AWS. | 25/04/2026 - 03/05/2026 | 25/04/2026 - 03/05/2026 |  |
 
 
 ### Kết quả đạt được tuần 2:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Triển khai được EC2 public và EC2 private phục vụ cho các bài thực hành hạ tầng.
+* Hiểu rõ hơn sự khác nhau giữa tài nguyên public và private trong kiến trúc cloud.
+* Nắm được các điều kiện cần thiết để kết nối an toàn vào EC2.
+* Hiểu vai trò của DNS và Route 53 trong việc quản lý truy cập thông qua tên miền.
+* Có thêm kinh nghiệm kiểm tra lỗi kết nối liên quan đến security group, key pair và cấu hình mạng.

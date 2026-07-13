@@ -1,7 +1,7 @@
----
+﻿---
 title: "Worklog Tuần 7"
-date: 2024-01-01
-weight: 1
+date: 2026-06-01
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
@@ -12,48 +12,23 @@ pre: " <b> 1.7. </b> "
 
 ### Mục tiêu tuần 7:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tiếp tục hoàn thiện kế hoạch dự án và mô tả rõ workflow triển khai.
+* Tham khảo góp ý từ các anh chị trong FCJ và thực hành Module 5.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 1 | - Tham gia event của FCJ để cập nhật thêm kiến thức và định hướng từ cộng đồng. | 01/06/2026 - 07/06/2026 | 01/06/2026 - 07/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Tiếp tục lên kế hoạch cho dự án, rà soát các chức năng và thứ tự ưu tiên triển khai. | 01/06/2026 - 07/06/2026 | 01/06/2026 - 07/06/2026 |  |
+| 3 | - Vẽ workflow cho dự án, thể hiện luồng xử lý chính và mối liên hệ giữa các thành phần. | 01/06/2026 - 07/06/2026 | 01/06/2026 - 07/06/2026 |  |
+| 4 | - Xin ý kiến của các anh chị trong FCJ để điều chỉnh hướng thiết kế và cách triển khai phù hợp hơn. | 01/06/2026 - 07/06/2026 | 01/06/2026 - 07/06/2026 |  |
+| 5 | - Thực hành Module 5, ghi chú các nội dung có thể ứng dụng vào dự án. | 01/06/2026 - 07/06/2026 | 01/06/2026 - 07/06/2026 |  |
 
 
 ### Kết quả đạt được tuần 7:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thiện thêm kế hoạch dự án theo hướng rõ ràng và có khả năng triển khai hơn.
+* Vẽ được workflow giúp mô tả luồng hoạt động của hệ thống.
+* Nhận được góp ý từ các anh chị trong FCJ để cải thiện thiết kế dự án.
+* Củng cố kiến thức trong Module 5 thông qua thực hành.
+* Tăng khả năng trình bày ý tưởng dự án một cách mạch lạc và chuyên nghiệp hơn.

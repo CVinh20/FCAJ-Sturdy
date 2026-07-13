@@ -1,7 +1,7 @@
----
+﻿---
 title: "Worklog Tuần 3"
-date: 2024-01-01
-weight: 1
+date: 2026-05-04
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
@@ -12,48 +12,21 @@ pre: " <b> 1.3. </b> "
 
 ### Mục tiêu tuần 3:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu BMAD Method để hỗ trợ phân tích, lập kế hoạch và quản lý yêu cầu dự án.
+* Học nội dung Deploy trong Module 3 nhằm chuẩn bị cho giai đoạn triển khai ứng dụng.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 1 | - Tìm hiểu BMAD Method, tập trung vào cách chia nhỏ yêu cầu, xác định vai trò và chuyển đổi ý tưởng thành kế hoạch triển khai. | 04/05/2026 - 10/05/2026 | 04/05/2026 - 10/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Học Deploy trong Module 3, ghi chú các bước chuẩn bị môi trường, cấu hình và kiểm tra sau khi triển khai. | 04/05/2026 - 10/05/2026 | 04/05/2026 - 10/05/2026 |  |
+| 3 | - Liên hệ nội dung đã học với dự án thực tập để xác định các bước có thể áp dụng trong quá trình phát triển. | 04/05/2026 - 10/05/2026 | 04/05/2026 - 10/05/2026 |  |
 
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Nắm được cách sử dụng BMAD Method để tư duy có cấu trúc hơn khi phân tích dự án.
+* Hiểu rõ hơn các bước cơ bản trong quy trình deploy ứng dụng.
+* Xây dựng được ghi chú triển khai ban đầu để hỗ trợ các tuần làm dự án sau.
+* Biết cách liên kết kiến thức lý thuyết với yêu cầu thực tế của dự án thực tập.
+* Cải thiện khả năng lập kế hoạch trước khi bắt đầu triển khai kỹ thuật.

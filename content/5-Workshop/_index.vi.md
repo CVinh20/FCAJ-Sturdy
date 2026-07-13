@@ -1,6 +1,6 @@
 ---
 title: "Workshop"
-date: 2024-01-01
+date: 2026-04-17
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
@@ -11,23 +11,27 @@ pre: " <b> 5. </b> "
 {{% /notice %}}
 
 
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+# Xây dựng ứng dụng trích xuất và phân tích tài liệu tự động - DocuMind AI
 
 #### Tổng quan
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+**DocuMind AI** là một ứng dụng xử lý tài liệu thông minh dựa trên kiến trúc Cloud-Native, kết hợp các dịch vụ hạ tầng AWS và các API AI tiên tiến như Google Gemini và OpenAI.
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
-
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+Trong workshop này, chúng ta sẽ học cách thiết kế, triển khai và vận hành một luồng xử lý tài liệu bất đồng bộ đầy đủ: từ việc lưu trữ, xếp hàng xử lý, trích xuất dữ liệu thô (OCR) cho đến phân tích ngữ nghĩa, giao tiếp thông minh với tài liệu (Chat/RAG), giám sát hệ thống và bảo mật tài nguyên.
 
 #### Nội dung
 
 1. [Tổng quan về workshop](5.1-Workshop-overview/)
 2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+3. [Tạo S3 Document Storage](5.3-Create-S3-Document-Storage/)
+4. [Tạo SQS Processing Queue](5.4-Create-SQS-Processing-Queue/)
+5. [Tích hợp Textract OCR](5.5-Integrate-Textract-OCR/)
+6. [Tích hợp các AI Providers](5.6-Integrate-AI-Providers/)
+7. [PostgreSQL & Prisma Database](5.7-PostgreSQL-Prisma-Database/)
+8. [Backend API và Worker](5.8-Backend-API-and-Worker/)
+9. [Frontend Dashboard](5.9-Frontend-Dashboard/)
+10. [Notification & Admin](5.10-Notification-and-Admin/)
+11. [IAM Role & Policy](5.11-IAM-Role-and-Policy/)
+12. [Monitoring & Security](5.12-Monitoring-and-Security/)
+13. [Deployment & Test](5.13-Deployment-and-Test/)
+14. [Dọn dẹp tài nguyên](5.14-Cleanup/)

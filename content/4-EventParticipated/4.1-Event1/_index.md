@@ -1,6 +1,6 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-05-09
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
@@ -10,117 +10,129 @@ pre: " <b> 4.1. </b> "
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
 {{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “Automated Prompt Engineering: Enhancing LLM Output Quality”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Identify the main issues caused by poor prompt engineering (generic outputs, token waste, inconsistent results, and lost productivity).
+- Learn prompt structure components and best practices for creating clear, specific instructions.
+- Understand token economics and advanced prompting techniques (CoT, Self-Consistency, ToT, RAG, Role Prompting).
+- Introduce Proptimizer (a browser extension for prompt optimization and AI chat) and its serverless backend architecture on AWS.
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Nguyen Tuan Thinh** – DevOps/Cloud Engineer
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Why Prompt Engineering Matters
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- **Generic prompts → Generic outputs**: Simple prompts yield unhelpful, high-level responses.
+- **Wasted tokens → Increased costs**: Poorly written queries waste processing resources.
+- **Ambiguous instructions → Inconsistent results**: Lack of structure leads to unpredictable AI behaviors.
+- **Poor communication → Lost productivity**: Ineffective AI interactions waste developer and designer time.
 
-#### Transitioning to modern application architecture – Microservices
+#### Prompt Comparison Examples
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- **Text Summarization**:
+  - *Bad Prompt*: `"Summarize the following text:"`
+  - *Good Prompt*: `"Summarize the following text for a high school student. The summary should be no more than 50 words and focus on the main ideas and key takeaways. Ensure it uses simple, easy-to-understand language."`
+- **Social Media Posts**:
+  - *Bad Prompt*: `"Write a few social media posts for our new product."`
+  - *Good Prompt*: `"Create 3 short Instagram posts (under 150 characters each) to promote our new eco-friendly reusable water bottle. Target audience: environmentally-conscious youth (18-30 years old). Include a call to action (CTA) to our product page. Use a friendly, inspiring, and slightly playful tone."`
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### Key Components of a Great Prompt
 
-#### Domain-Driven Design (DDD)
+- **Role**: Define who the model is pretending to be (e.g., career coach for fresh graduates).
+- **Instruction/Task**: Specify what the model should do (e.g., improve an internship self-introduction).
+- **Context**: Provide relevant background information (e.g., DevOps Engineer with AWS, backend, and project experience).
+- **Input Data**: The actual data to be acted upon (e.g., `"Hello, my name is Thinh..."`).
+- **Examples (Few-Shot)**: Provide input-output demonstrations (e.g., `"I like programming" → "I enjoy programming..."`).
+- **Output Format**: Define the structure/style of the response (e.g., improved version + short explanation).
+- **Constraints/Guidelines**: List strict requirements or boundaries (e.g., under 80 words, simple, natural, clear, confident).
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### Best Practices for Prompting
 
-#### Event-Driven Architecture
+- Be clear and specific.
+- Use directive/explicit language.
+- Use delimiters (e.g., triple quotes, XML tags) to separate sections.
+- Describe DOs instead of DON'Ts.
+- Avoid asking LLMs to perform complex math calculations directly.
+- Allow the model to say `"I don't know"` to prevent hallucinations.
+- Break down long inputs into smaller, manageable segments.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+#### Token Economics & Advanced Techniques
 
-#### Compute Evolution
+- **Token Economics**: Tokens are subword units used by LLMs to read/write text. Counts vary by language. Essential for cost management when querying paid APIs (e.g., Claude 3.5 Sonnet / Claude 3 Opus).
+- **Advanced Techniques**:
+  - **Chain-of-Thought (CoT)**: Prompt the LLM to explain its reasoning step-by-step.
+  - **Self-Consistency**: Run multiple CoT paths and take the majority vote.
+  - **Tree-of-Thoughts (ToT)**: Allow the LLM to search/backtrack over multiple reasoning branches.
+  - **Retrieval-Augmented Generation (RAG)**: Connect external search or document databases to the LLM.
+  - **Role Prompting**: Define a persona to contextualize responses.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+#### Proptimizer & Solution Architecture
 
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+- **Proptimizer**: A browser extension that optimizes prompts and allows AI chat anywhere on the web.
+- **AWS Serverless Solution Architecture**:
+  - **Frontend & CDN**: AWS CloudFront (global CDN cache) and Amazon S3 (static website hosting).
+  - **Authentication & Security**: Amazon Cognito (manages user auth, signup, sign-in, JWT token generation).
+  - **API & Backend Logic**: Amazon API Gateway (traffic control/routing, rate limiting) and AWS Lambda (serverless microservice execution).
+  - **AI Integration**: Amazon Bedrock (serverless API to access foundation models like Claude).
+  - **Data Storage**: Amazon DynamoDB (scalable NoSQL database storing user profiles and prompt history).
+  - **Monitoring & Operations**: Amazon CloudWatch Logs (system output and trace logs) and Amazon CloudWatch Metrics (latency, error rates, system health dashboard).
 
 ### Key Takeaways
 
 #### Design Mindset
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+- **Context-First approach**: Provide rich context, explicit roles, and concrete output formats.
+- **Structured Prompts**: Leverage the key prompt components to build robust, reproducible AI workflows.
+- **Token Efficiency**: Always optimize prompt size and language translations to reduce operational costs.
 
 #### Technical Architecture
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- **Serverless Ecosystem**: Combining S3, CloudFront, Lambda, and API Gateway creates a highly scalable system with minimal hosting costs.
+- **Bedrock Integration**: Amazon Bedrock is highly effective for deploying LLM applications without managing any server infra.
+- **Observability**: CloudWatch logs and custom metrics dashboards are essential for tracking cost, latency, and failure rates in serverless AI apps.
 
-#### Modernization Strategy
+#### Modern AI Patterns
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- Use **advanced prompting patterns** (like CoT, RAG, or agentic frameworks) rather than simple single-turn prompts for complex task automation.
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- **Structure daily prompts**: Incorporate Roles, Context, and Constraints to save time and reduce token consumption.
+- **Enhance software development**: Use prompting best practices to improve code generation, unit test coverage, and documentation queries.
+- **Leverage Serverless AWS Stack**: Propose S3/CloudFront and Lambda architectures for new internal utilities.
+- **Explore Amazon Bedrock**: Pilot Amazon Bedrock APIs for building generative AI features in existing company projects.
+- **Utilize Proptimizer**: Install and test the Proptimizer extension from `https://d3jqm7so635aqb.cloudfront.net` to boost daily productivity.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Attending the **“Automated Prompt Engineering: Enhancing LLM Output Quality”** workshop was extremely valuable, giving me a comprehensive view of prompt engineering best practices and building serverless AI applications on AWS. Key experiences included:
 
 #### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+- Experienced how Nguyễn Tuấn Thịnh designed and deployed a real-world AI utility, sharing **best practices** in modern AI engineering.
+- Through prompt comparisons and concrete case studies, I learned how to address prompt volatility and maximize LLM outputs.
 
 #### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+- Analyzed token economics and studied advanced reasoning patterns like **Chain-of-Thought (CoT)** and **Tree-of-Thoughts (ToT)**.
+- Gained insights into serverless architectures, understanding how components like **API Gateway**, **AWS Lambda**, and **DynamoDB** work together.
 
 #### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+- Discovered **Proptimizer**, a tool designed to streamline prompt engineering workflows.
+- Explored **Amazon Bedrock**'s capabilities for hosting and invoking foundation models with ease.
 
 #### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+- Exchanged ideas with developers about API rate-limiting, authentication using **Cognito**, and performance monitoring with **CloudWatch**.
 
 #### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+- High-quality LLM output requires **structured instructions** rather than simple queries.
+- AWS Serverless architectures are ideal for **lean, cost-effective, and scalable AI solutions**.
+- Monitoring is critical; a robust **CloudWatch metrics** dashboard helps debug latency and service errors effectively.
 
 #### Some event photos
-*Add your event photos here*  
+*Add your event photos here*
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about prompt optimization, building serverless AI applications, and integrating LLMs into modern development workflows.

@@ -1,7 +1,7 @@
----
+﻿---
 title: "Worklog Tuần 6"
-date: 2024-01-01
-weight: 1
+date: 2026-05-25
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
@@ -12,47 +12,22 @@ pre: " <b> 1.6. </b> "
 
 ### Mục tiêu tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tham gia hoạt động của FCJ để cập nhật thêm kinh nghiệm thực tế từ cộng đồng.
+* Lên kế hoạch dự án và bắt đầu thiết kế Frontend dựa trên mục tiêu đã xác định.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 1 | - Tham gia event của FCJ, ghi nhận các chia sẻ và kinh nghiệm có thể áp dụng vào quá trình thực tập. | 25/05/2026 - 31/05/2026 | 25/05/2026 - 31/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Lên kế hoạch cho dự án, xác định phạm vi công việc, các chức năng chính và hướng triển khai tổng thể. | 25/05/2026 - 31/05/2026 | 25/05/2026 - 31/05/2026 |  |
+| 3 | - Thiết kế Frontend, phác thảo giao diện và luồng sử dụng để phục vụ quá trình phát triển sau này. | 25/05/2026 - 31/05/2026 | 25/05/2026 - 31/05/2026 |  |
+| 4 | - Thực hành lại Module 3 và Module 4 nhằm củng cố kiến thức deploy, storage và migration trước khi áp dụng vào dự án. | 25/05/2026 - 31/05/2026 | 25/05/2026 - 31/05/2026 |  |
 
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Tham gia được hoạt động cộng đồng và mở rộng góc nhìn về cách học, thực hành AWS.
+* Xác định được phạm vi và hướng triển khai ban đầu của dự án thực tập.
+* Hoàn thành định hướng thiết kế Frontend để làm cơ sở cho các bước phát triển tiếp theo.
+* Ôn tập lại kiến thức Module 3 và Module 4 một cách có hệ thống.
+* Bắt đầu chuyển trọng tâm từ học lý thuyết sang lập kế hoạch và xây dựng dự án thực tế.

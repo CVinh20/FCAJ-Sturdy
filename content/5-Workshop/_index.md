@@ -1,31 +1,36 @@
 ---
 title: "Workshop"
-date: 2024-01-01
+date: 2026-04-17
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
+
 {{% notice warning %}}
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
 {{% /notice %}}
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+# Building an Automated Document Extraction and Analysis Application - DocuMind AI
 
 #### Overview
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+**DocuMind AI** is an intelligent document processing application built on a Cloud-Native architecture, combining AWS infrastructure services with advanced AI APIs such as Google Gemini and OpenAI.
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
-
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+In this workshop, you will learn how to design, deploy, and operate a complete asynchronous document processing pipeline: from storage, queue management, and raw text extraction (OCR) to semantic analysis, intelligent Q&A with documents (Chat/RAG), monitoring, and security.
 
 #### Content
 
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+1. [Workshop overview](5.1-Workshop-overview/)
+2. [Prerequisite](5.2-Prerequiste/)
+3. [Create S3 Document Storage](5.3-Create-S3-Document-Storage/)
+4. [Create SQS Processing Queue](5.4-Create-SQS-Processing-Queue/)
+5. [Integrate Textract OCR](5.5-Integrate-Textract-OCR/)
+6. [Integrate AI Providers](5.6-Integrate-AI-Providers/)
+7. [PostgreSQL & Prisma Database](5.7-PostgreSQL-Prisma-Database/)
+8. [Backend API and Worker](5.8-Backend-API-and-Worker/)
+9. [Frontend Dashboard](5.9-Frontend-Dashboard/)
+10. [Notification and Admin](5.10-Notification-and-Admin/)
+11. [IAM Role and Policy](5.11-IAM-Role-and-Policy/)
+12. [Monitoring and Security](5.12-Monitoring-and-Security/)
+13. [Deployment and Test](5.13-Deployment-and-Test/)
+14. [Cleanup](5.14-Cleanup/)

@@ -28,3 +28,7 @@ temp/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Hugo binary
+hugo.exe
+hugo.zip

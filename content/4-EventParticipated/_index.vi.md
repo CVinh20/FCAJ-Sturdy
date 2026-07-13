@@ -1,46 +1,53 @@
 ---
 title: "Các events đã tham gia"
-date: 2024-01-01
+date: 2026-05-09
 weight: 4
 chapter: false
 pre: " <b> 4. </b> "
 ---
 
 {{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+**Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-> Trong phần này, các bạn cần liệt kê và mô tả chi tiết các sự kiện (event) mà mình đã tham gia trong suốt quá trình thực tập hoặc làm việc. 
-> 
-> Mỗi sự kiện nên được trình bày theo định dạng Event 1, Event 2, Event 3…, kèm theo các thông tin:
-> * Tên sự kiện
-> * Thời gian tổ chức
-> * Địa điểm (nếu có)
-> * Vai trò của bạn trong sự kiện (người tham dự, hỗ trợ tổ chức, diễn giả, v.v.)
-> * Mô tả ngắn gọn nội dung và hoạt động chính trong sự kiện
-> * Kết quả hoặc giá trị đạt được (bài học, kỹ năng mới, đóng góp cho nhóm/dự án)
-> * Việc liệt kê này giúp thể hiện rõ sự tham gia thực tế của bạn, cũng như các kỹ năng mềm và kinh nghiệm bạn đã tích lũy qua từng sự kiện.
-
-
-Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.
+Trong quá trình thực tập và tham gia các hoạt động học tập cùng cộng đồng First Cloud Journey, em đã tham gia 3 events liên quan đến prompt engineering, cloud computing, DevOps, cybersecurity, AI và định hướng nghề nghiệp. Mỗi event đều mang lại cho em thêm kiến thức thực tế, góc nhìn kỹ thuật mới và định hướng rõ ràng hơn về cách áp dụng các công nghệ cloud, AI và DevOps vào công việc.
 
 ### [Event 1](4.1-Event1/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+&emsp;**Tên sự kiện:** Automated Prompt Engineering: Enhancing LLM Output Quality
 
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+&emsp;**Thời gian:** Ngày 09/05/2026
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
+&emsp;**Địa điểm:** Sự kiện thuộc cộng đồng First Cloud Journey
 
+&emsp;**Vai trò trong sự kiện:** Người tham dự
 
+&emsp;**Tóm tắt:** Workshop tập trung vào các best practices trong prompt engineering, kinh tế học token, các kỹ thuật prompting nâng cao và kiến trúc serverless của tiện ích Proptimizer. Thông qua sự kiện này, em hiểu rõ hơn cách xây dựng prompt có cấu trúc, cung cấp ngữ cảnh, xác định vai trò và ràng buộc đầu ra để cải thiện chất lượng phản hồi từ LLM và tối ưu chi phí token.
+
+---
 
 ### [Event 2](4.2-Event2/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+&emsp;**Tên sự kiện:** First Cloud Journey Community Day
 
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+&emsp;**Thời gian:** Ngày 06/06/2026
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
+&emsp;**Địa điểm:** Sự kiện thuộc cộng đồng First Cloud Journey
 
+&emsp;**Vai trò trong sự kiện:** Người tham dự
+
+&emsp;**Tóm tắt:** Community Day bao gồm nhiều phần chia sẻ về Docker, AWS WAF, hệ thống phát hiện xâm nhập mạng dựa trên Machine Learning, kiến trúc AWS WebSocket cho Godot multiplayer, GraphRAG với Amazon Bedrock và Neptune, teamwork hiệu quả và định hướng phát triển từ IT Helpdesk lên System Administrator, Cloud và DevOps. Sự kiện giúp em có góc nhìn rộng hơn về sự kết nối giữa cloud, security, AI, infrastructure và kỹ năng làm việc nhóm trong môi trường kỹ thuật thực tế.
+
+---
+
+### [Event 3](4.3-Event3/)
+
+&emsp;**Tên sự kiện:** Định hướng nghề nghiệp DevOps và Cloud
+
+&emsp;**Thời gian:** Ngày 13/06/2026
+
+&emsp;**Địa điểm:** Sự kiện thuộc cộng đồng First Cloud Journey
+
+&emsp;**Vai trò trong sự kiện:** Người tham dự
+
+&emsp;**Tóm tắt:** Buổi chia sẻ đưa ra lộ trình thực tế cho sinh viên và người mới bắt đầu muốn theo đuổi DevOps và Cloud. Nội dung nhấn mạnh việc học nền tảng như Linux, networking, programming, Git, CI/CD và containers trước khi đi sâu vào các công cụ nâng cao. Sự kiện cũng khuyến khích xây dựng project nhỏ, tạo portfolio, học qua hands-on labs và tham gia cộng đồng để phát triển đều đặn.
