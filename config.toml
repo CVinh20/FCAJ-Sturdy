@@ -1,4 +1,4 @@
-baseURL = "https://tienhuu-dev.github.io/aws-internship-report-site/"
+baseURL = "https://CVinh20.github.io/WORKSHOP-AWS/"
 relativeURLs = false
 canonifyURLs = true
 defaultContentLanguage = "en"
@@ -16,7 +16,7 @@ home = [ "HTML", "RSS", "JSON"]
   # Git hub repo link
   editURL = ""
   description = "Personal AWS internship report site built with Hugo and the FCJ workshop template."
-  author = "Tien Huu"
+  author = "Le Huynh Cong Vinh"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
@@ -30,7 +30,7 @@ languageName = "English"
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fab fa-github'></i> GitHub Repository"
 identifier = "GitHub Repository"
-url = "https://github.com/tienhuu-dev/aws-internship-report-site"
+url = "https://github.com/CVinh20/WORKSHOP-AWS"
 weight = 10
 
 [[Languages.en.menu.shortcuts]]
@@ -47,7 +47,7 @@ languageName = "Tiếng Việt"
 [[Languages.vi.menu.shortcuts]]
 name = "<i class='fab fa-github'></i> Mã nguồn GitHub"
 identifier = "GitHub Repository"
-url = "https://github.com/tienhuu-dev/aws-internship-report-site"
+url = "https://github.com/CVinh20/WORKSHOP-AWS"
 weight = 10
 
 [[Languages.vi.menu.shortcuts]]
